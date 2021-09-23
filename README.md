@@ -17,3 +17,6 @@ If you do the same for ctrl it will write the npc name to you.
 
 
 Original https://www.curseforge.com/wow/addons/idtip
+
+
+the name of the idTip folder
