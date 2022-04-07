@@ -20,3 +20,8 @@ Original https://www.curseforge.com/wow/addons/idtip
 
 
 the name of the idTip folder
+
+
+V2 
+add print zone name(click for zone text)
+add print spell and item id(alt-pass the mouse on item or spell)

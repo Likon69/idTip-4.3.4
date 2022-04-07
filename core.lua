@@ -4,8 +4,10 @@ local select, UnitBuff, UnitDebuff, UnitAura, tonumber, strfind, hooksecurefunc 
 local function addLine(self,id,isItem)
 	if isItem then
 		self:AddDoubleLine("ItemID:","|cffffffff"..id)
+		if IsAltKeyDown() then ChatFrame1EditBox:SetText(id) print(id) end
 	else
 		self:AddDoubleLine("SpellID:","|cffffffff"..id)
+		if IsAltKeyDown() then ChatFrame1EditBox:SetText(id) print(id) end
 	end
 	self:Show()
 end
@@ -71,3 +73,23 @@ ShoppingTooltip2:HookScript("OnTooltipSetItem", attachItemTooltip)
 ShoppingTooltip3:HookScript("OnTooltipSetItem", attachItemTooltip)
 
 print("ok")
+
+
+MinimapZoneTextButton:HookScript("OnClick", function()
+	
+	--print("GetMinimapZoneText: |cffFFF468", GetMinimapZoneText() )
+	--print("GetRealZoneText: |cffFFF468", GetRealZoneText() )
+	print("GetZoneText: |cffFFF468", GetZoneText() )
+	print("GetSubZoneText: |cffFFF468", GetSubZoneText() )
+	--print("GetZonePVPInfo: |cffFFF468", GetZonePVPInfo() )
+	local a = {GetCurrentMapZone()}
+	--print("GetCurrentMapZone: |cffFFF468", a[1] )
+	
+	--print( GetCurrentMapAreaID ()  )
+	--print( GetMapNameByID(GetCurrentMapAreaID())  )
+	
+	-- /run print((select(8,GetInstanceInfo())))
+	
+	--print(" ")
+
+end)
